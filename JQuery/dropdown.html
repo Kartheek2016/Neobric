@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$("select").click(function() {
+		var $opt = $(":selected").val();
+		$('p').html($opt);
+	});
+});
+</script>
+</head>
+<body>
+Car:
+<select selected="selected">
+	<option value="1">Volvo</option>
+	<option value="2">Saab</option>
+	<option value="3">Mercedes</option>
+	<option value="4">Audi</option>
+</select>
+<p></p>
+</body>
+</html>
+
